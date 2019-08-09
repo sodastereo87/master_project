@@ -7,7 +7,6 @@ const roomSchema = new Schema({
   Room: { type: [String], required: true },
   Date: { type: String, required: true },
   Time: { type: String, required: true },
-  image: { type: String, required: true },
   googleId: { type: String, required: true, unique: true }
 });
 

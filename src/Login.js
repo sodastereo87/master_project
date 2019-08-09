@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import fire from './config/Fire';
 
+
+const divStyle = {
+  color: 'white',
+  width: '25%' ,
+  background: 'blue',
+  padding: '10px',
+  margin: '5px',
+};
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -40,16 +49,16 @@ class Login extends Component {
        <div className="col-md-6">
        <form>
       <div class="form-group">
-       <label for="exampleInputEmail1">Email address</label>
+       <label for="exampleInputEmail1">Email address </label>
        <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
        <small id="emailHelp" class="form-text text-muted"></small>
       </div>
        <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
+      <label for="exampleInputPassword1">Password </label>
       <input value={this.state.password} onChange={this.handleChange} type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
       </div>
-      <button type="submit" onClick={this.login} class="btn btn-primary">Login</button>
-      <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
+      <button type="submit" onClick={this.login} class="btn btn-primary"  style={divStyle}>Login</button>
+      <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success" style={divStyle}>Sign up</button>
  </form>
  
  </div>
