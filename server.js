@@ -32,7 +32,7 @@ todoRoutes.route('/').get(function (req, res) {
 todoRoutes.route('/:id').get(function (req, res) {
   let id = req.params.id
   Todo.findById(id, function (err, todo) {
-    req.res(todo);
+    // req.res(todo);
   });
 });
 
@@ -72,3 +72,17 @@ app.listen(PORT, function () {
   console.log("server running on port:" + PORT);
 });
 
+// // server.js
+// import mongoose from 'mongoose'
+// const dotenv = require('dotenv').config()
+// // Initialize connection to database
+// const dbUrl = process.env.DB_URL,
+//   dbOptions = {
+//     useNewUrlParser: true,
+//     useFindAndModify: false
+//   }
+// // Set DB from mongoose connection
+// mongoose.connect(dbUrl, dbOptions)
+// const db = mongoose.connection
+// db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+// export default db

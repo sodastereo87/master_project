@@ -8,9 +8,9 @@ const Todo = props => (
         <td className={props.todo.todo_completed ? 'completed' : ''}>{props.todo.todo_responsible}</td>
         <td className={props.todo.todo_completed ? 'completed' : ''}>{props.todo.todo_priority}</td>
         <td>
-            <Link to={"/edit/"+props.todo._id}>Edit</Link>
+            <Link to={"/edit/" + props.todo._id}>Edit</Link>
         </td>
- </tr>
+    </tr>
 )
 
 export default class TodosList extends Component {
@@ -30,23 +30,23 @@ export default class TodosList extends Component {
             })
     }
 
-    componentDidUpdate() {
-        axios.get('http://localhost:3001/todos/')
-        .then(response => {
-            this.setState({ todos: response.data });
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
-    }
+    // componentDidUpdate() {
+    //     axios.get('http://localhost:3001/todos/')
+    //         .then(response => {
+    //             this.setState({ todos: response.data });
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //         })
+    // }
 
     todosList() {
-        return this.state.todos.map(function(currentTodo, i) {
+        return this.state.todos.map(function (currentTodo, i) {
             return <Todo todo={currentTodo} key={i} />;
         });
     }
 
-    render() {  
+    render() {
         return (
             <div>
                 <h3>Current Reservations </h3>

@@ -24,8 +24,8 @@ class Home extends Component {
         return (
             <div className="col-md-6">
                 <h1>Welcome</h1>
-                <button onClick={this.logout} style={divStyle}>Logout</button>
                 <Form />
+                <button onClick={this.logout} style={divStyle}>Logout</button>
             </div>
 
         );
