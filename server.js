@@ -12,6 +12,7 @@ app.use(cors());
 // here error
 app.use(bodyParser.json());
 
+// process.env.MONGODB_URI || and const PORT = process.env.PORT || to connect to mlab
 mongoose.connect(process.env.MONGODB_URI ||'mongodb://127.0.0.1:27017/todos', 
 {
    useNewUrlParsel: true
