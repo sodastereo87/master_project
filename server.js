@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const PORT = 3001;
+const PORT = process.env.PORT ||  3001;
 const todoRoutes = express.Router();
 
 let Todo = require('./model');
@@ -12,7 +12,10 @@ app.use(cors());
 // here error
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/todos', { useNewUrlParsel: true });
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://127.0.0.1:27017/todos', 
+{
+   useNewUrlParsel: true
+   });
 const connection = mongoose.connection;
 
 connection.once('open', function () {
@@ -72,17 +75,3 @@ app.listen(PORT, function () {
   console.log("server running on port:" + PORT);
 });
 
-// // server.js
-// import mongoose from 'mongoose'
-// const dotenv = require('dotenv').config()
-// // Initialize connection to database
-// const dbUrl = process.env.DB_URL,
-//   dbOptions = {
-//     useNewUrlParser: true,
-//     useFindAndModify: false
-//   }
-// // Set DB from mongoose connection
-// mongoose.connect(dbUrl, dbOptions)
-// const db = mongoose.connection
-// db.on('error', console.error.bind(console, 'MongoDB connection error:'))
-// export default db
