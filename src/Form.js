@@ -1,70 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-class Form extends React.Component {
-    state = {
-        name: "",
-        room: "",
-        company: "",
-        email: "",
-        date: ""
-    };
+import CreateTodo from "./components/create-todo.component";
+import EditTodo from "./components/edit-todo.component";
+import TodosList from "./components/todos-list.component";
 
-    onSubmit = (e) => {
-        e.preventDefault();
-        console.log(this.state);
-        this.setState({
-            name: "",
-            room: "",
-            company: "",
-            email: "",
-            date: "",
-            time: ""
-        });
-    };
+import logo from "./logo.svg";
 
-    render() {
-        return (
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="container">
+          
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <a className="navbar-brand" href="https://codingthesmartway.com" target="_blank">
+              <img src={logo} width="30" height="30" alt="CodingTheSmartWay.com" />
+            </a>
+            <Link to="/" className="navbar-brand">MERN-Stack Todo App</Link>
+            <div className="collpase nav-collapse">
+              <ul className="navbar-nav mr-auto">
+                <li className="navbar-item">
+                  <Link to="/" className="nav-link">Todos</Link>
+                </li>
+                <li className="navbar-item">
+                  <Link to="/create" className="nav-link">Create Todo</Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-            <form>
-                <br />
-                <input placeholder=' Name'
-                    value={this.state.name}
-                    onChange={e => this.setState({ name: e.target.value })} />
-                <br />
-
-                <input placeholder=' Room'
-                    value={this.state.room}
-                    onChange={e => this.setState({ room: e.target.value })} />
-                <br />
-
-                <input placeholder=' Company'
-                    value={this.state.company}
-                    onChange={e => this.setState({ company: e.target.value })} />
-                <br />
-
-                <input placeholder=' Email'
-                    value={this.state.email}
-                    onChange={e => this.setState({ email: e.target.value })} />
-                <br />
-
-                <input placeholder=' Date'
-                    value={this.state.date}
-                    onChange={e => this.setState({ date: e.target.value })} />
-                <br />
-                
-                
-                <input placeholder=' Time'
-                    value={this.state.time}
-                    onChange={e => this.setState({ time: e.target.value })} />
-                <br />
-                <br />
-
-                <button onClick={e => this.onSubmit(e)}> Submit</button>
-            </form>
-
-        );
-    }
-
+          <Route path="/" exact component={TodosList} />
+          <Route path="/edit/:id" component={EditTodo} />
+          <Route path="/create" component={CreateTodo} />
+        </div>
+      </Router>
+    );
+  }
 }
 
-export default Form;
+export default App;
