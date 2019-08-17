@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import fire from './config/Fire';
+import './App.css';
 
 
 const divStyle = {

@@ -1,4 +1,4 @@
-.App {
+  .App {
   text-align: center;
 }
 
@@ -30,4 +30,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.col-md-6 {
+  margin: auto;
+  padding-top: 10%;
+  color: azure;
+  /* font-size: 40px; */
+}
+
+body {
+  background-image: url("https://images.squarespace-cdn.com/content/50fb54c8e4b09c7c8a795229/1358828076961-WZY97244XR8BVA66KORY/Conference+Room+Walls-4778.jpg?format=1000w&content-type=image%2Fjpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: grey;
+  padding-bottom: 1%;
+}
+
+.form-group {
+  font-size: 20px;
+}
+
+.navbar {
+  font-weight: bold;  
+  font-size: 25px;
 }

@@ -7,7 +7,7 @@ const divStyle = {
     width: '25%',
     background: 'blue',
     padding: '10px',
-    margin: '5px',
+    margin: '15px',
 };
 
 class Home extends Component {
