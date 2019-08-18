@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import fire from './config/Fire';
 import Form from './Form';
+import Calendar from "./Calendar";
+
 
 const divStyle = {
     color: 'white',
@@ -25,6 +27,9 @@ class Home extends Component {
             <div className="col-md-6">
                 <h1>Welcome</h1>
                 <Form />
+                <br />
+                <Calendar />
+                <br />
                 <button onClick={this.logout} style={divStyle}>Logout</button>
             </div>
 

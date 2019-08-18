@@ -39,6 +39,9 @@ export default class CreateTodo extends Component {
 
     onSubmit(e) {
         e.preventDefault();
+        
+            alert("Your Reservation Has Been Created")
+        
 
         console.log(`Form submitted:`);
         console.log(`Todo Description: ${this.state.todo_description}`);
@@ -121,10 +124,13 @@ export default class CreateTodo extends Component {
                         </div>
                     </div>
                     <div className="form-group">
-                        <input type="submit" value="Make Reservation" className="btn btn-primary" />
+                        <input type="submit" value="Make Reservation" className="btn btn-primary" onclick="myFunction()"></input>
+                       
                     </div>
                 </form>
+                <div> <h2>Select The Date</h2></div>
             </div>
+           
         )
     }
 }

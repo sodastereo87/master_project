@@ -11,6 +11,11 @@ const divStyle = {
   margin: '5px',
 };
 
+const h1Style = {
+  color: 'black',
+  
+};
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -48,6 +53,7 @@ class Login extends Component {
   render() {
     return (
       <div className="col-md-6">
+        <h1 style={h1Style}><strong>Login or signup to make a reservation </strong></h1>
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address </label>

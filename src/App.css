@@ -56,5 +56,11 @@ body {
 
 .navbar {
   font-weight: bold;  
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.react-calendar {
+ margin-left: 30%;
+  color: black;
+ 
 }
