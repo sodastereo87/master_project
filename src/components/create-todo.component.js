@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Calendar from "../Calendar";
+
 
 export default class CreateTodo extends Component {
 
@@ -89,6 +91,7 @@ export default class CreateTodo extends Component {
                         />
                     </div>
                     <div className="form-group">
+                        <h3>Select Your Room</h3>
                         <div className="form-check form-check-inline">
                             <input className="form-check-input"
                                 type="radio"
@@ -98,7 +101,7 @@ export default class CreateTodo extends Component {
                                 checked={this.state.todo_priority === 'Low'}
                                 onChange={this.onChangeTodoPriority}
                             />
-                            <label className="form-check-label">Low</label>
+                            <label className="form-check-label">Room 1</label>
                         </div>
                         <div className="form-check form-check-inline">
                             <input className="form-check-input"
@@ -109,7 +112,7 @@ export default class CreateTodo extends Component {
                                 checked={this.state.todo_priority === 'Medium'}
                                 onChange={this.onChangeTodoPriority}
                             />
-                            <label className="form-check-label">Medium</label>
+                            <label className="form-check-label">Room 2</label>
                         </div>
                         <div className="form-check form-check-inline">
                             <input className="form-check-input"
@@ -120,7 +123,7 @@ export default class CreateTodo extends Component {
                                 checked={this.state.todo_priority === 'High'}
                                 onChange={this.onChangeTodoPriority}
                             />
-                            <label className="form-check-label">High</label>
+                            <label className="form-check-label">Room 3</label>
                         </div>
                     </div>
                     <div className="form-group">
@@ -129,6 +132,8 @@ export default class CreateTodo extends Component {
                     </div>
                 </form>
                 <div> <h2>Select The Date</h2></div>
+                <Calendar />
+                <br />
             </div>
            
         )

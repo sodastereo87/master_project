@@ -76,6 +76,7 @@ export default class EditTodo extends Component {
     render() {
         return (
             <div>
+                <br />
                 <h3>Update Reservation</h3>
                 <h5>Update or Confirm Information To Cancel</h5>
                 <form onSubmit={this.onSubmit}>
@@ -96,6 +97,7 @@ export default class EditTodo extends Component {
                         />
                     </div>
                     <div className="form-group">
+                        <h3>Select Your Room</h3>
                         <div className="form-check form-check-inline">
                             <input className="form-check-input"
                                 type="radio"
@@ -105,7 +107,7 @@ export default class EditTodo extends Component {
                                 checked={this.state.todo_priority === 'Low'}
                                 onChange={this.onChangeTodoPriority}
                             />
-                            <label className="form-check-label">Low</label>
+                            <label className="form-check-label">Room 1</label>
                         </div>
                         <div className="form-check form-check-inline">
                             <input className="form-check-input"
@@ -116,7 +118,7 @@ export default class EditTodo extends Component {
                                 checked={this.state.todo_priority === 'Medium'}
                                 onChange={this.onChangeTodoPriority}
                             />
-                            <label className="form-check-label">Medium</label>
+                            <label className="form-check-label">Room 2</label>
                         </div>
                         <div className="form-check form-check-inline">
                             <input className="form-check-input"
@@ -127,9 +129,10 @@ export default class EditTodo extends Component {
                                 checked={this.state.todo_priority === 'High'}
                                 onChange={this.onChangeTodoPriority}
                             />
-                            <label className="form-check-label">High</label>
+                            <label className="form-check-label">Room 3</label>
                         </div>
                         <div className="form-check">
+                            <br />
                             <input type="checkbox"
                                 className="form-check-input"
                                 id="completedCheckbox"
