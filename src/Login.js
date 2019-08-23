@@ -53,7 +53,7 @@ class Login extends Component {
   render() {
     return (
       <div className="col-md-6">
-        <h1 style={h1Style}><strong>Login or signup to make a reservation </strong></h1>
+        <h1 style={h1Style} className="logintitle"><strong>Login or signup to make a reservation </strong></h1>
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address </label>
