@@ -6,13 +6,13 @@ import './Login.css';
 const divStyle = {
   color: 'white',
   width: '25%',
-  background: 'blue',
+  background: '#fffff',
   padding: '10px',
   margin: '5px',
 };
 
 const h1Style = {
-  color: 'black',
+  color: 'white',
   
 };
 
@@ -52,8 +52,10 @@ class Login extends Component {
   }
   render() {
     return (
-      <div className="col-md-6">
+      <div className="col-md-6" id="latestlogin">
+        <img src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397182245/762467a177379181d8a0eca887631c12.png"></img>
         <h1 style={h1Style} className="logintitle"><strong>Login or signup to make a reservation </strong></h1>
+        <br></br>
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address </label>

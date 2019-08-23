@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend+Exa|Magra|Michroma|Orbitron|Prosto+One|Staatliches&display=swap');
-
 .logintitle{
     font-family: 'Prosto One', cursive;
-    font-size: 
+    font-size: 33px;
+    color: #ffffff4d;
+}
+#latestlogin{
+    padding-top: 0%;
 }

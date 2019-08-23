@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import fire from './config/Fire';
 import Form from './Form';
-// import Calendar from "./Calendar";
-
-const divStyle = {
-    color: 'white',
-    width: '25%',
-    background: 'blue',
-    padding: '10px',
-    margin: '15px',
-};
+import './App.css';
 
 class Home extends Component {
     constructor(props) {
@@ -24,12 +16,12 @@ class Home extends Component {
     render() {
         return (
             <div className="col-md-6">
-                <h1>Reservation System</h1>
+                <h1 id="demoFont">Reservation System</h1>
                 <Form />
                 <br />
                 {/* <Calendar /> */}
                 <br />
-                <button onClick={this.logout} style={divStyle}>Logout</button>
+                <button className="myButton" onClick={this.logout}>Logout</button>
             </div>
 
         );

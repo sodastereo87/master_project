@@ -14,18 +14,20 @@ class Main extends Component {
                 <br />
                 <Router>
 
-                    <div className="main">
+                    <div className="card">
                         <br />
-                        <h1>Meeting Rooms</h1>
+                        <h1 id="demoFont2">Meeting Rooms</h1>
                         <br />
 
                         <MDBCol>
-                            <MDBCard style={{ width: "22rem", color: "black", display: "inline"}}>
-                                <MDBCardImage className="img-fluid" src="http://www.cambridgehotel.ca/wp-content/uploads/2017/01/meeting-room-4.jpg" waves />
+                            <MDBCard>
+                                <MDBCardImage className="img-fluid" src="https://assets-global.website-files.com/5b0eb78d23154b82952ae4b1/5b571ee623af1b792885e4c0_photo-1517502884422-41eaead166d4_meitu_37.jpg" waves />
                                 <MDBCardBody>
                                     <MDBCardTitle>Room 1 (Small)</MDBCardTitle>
                                     <MDBCardText>
-                                        text here
+                                    Our Conference Room has all the a/v technology you might need for your meeting.
+                                     Equipped with a glass board, seating for 8, great for any type of presentation.
+                                      The room has corner windows with beautiful Brickell Ave. views. 
                                     </MDBCardText>
                                     <MDBBtn href="/create"><strong>Reserve This Space</strong></MDBBtn>
                                 </MDBCardBody>
@@ -35,12 +37,14 @@ class Main extends Component {
                         <br />
 
                         <MDBCol>
-                            <MDBCard style={{ width: "22rem", color: "black", display: "inline"}}>
+                            <MDBCard>
                                 <MDBCardImage className="img-fluid" src="https://www.goubiq.com/wp-content/uploads/2016/08/Conference-Room_s.jpg" waves />
                                 <MDBCardBody>
                                     <MDBCardTitle>Room 2 (Medium)</MDBCardTitle>
                                     <MDBCardText>
-                                        text here
+                                    Meet your clients in a well-designed and professional space. Available hourly /daily.
+                                     Fully equipped with integrated conference phone and video system, 
+                                    70” TV screen, Apple TV, dedicated secure Wi-Fi, whiteboard, seating for 8.
                                     </MDBCardText>
                                     <MDBBtn href="/create"><strong>Reserve This Space</strong></MDBBtn>
                                 </MDBCardBody>
@@ -50,12 +54,14 @@ class Main extends Component {
                         <br />
 
                         <MDBCol>
-                            <MDBCard style={{ width: "22rem", color: "black", display: "inline"}}>
-                                <MDBCardImage className="img-fluid" src="http://www.hotel-grandmajestic.cz/files/hotel/conferences/hotel-majestic-prague-conference-room-grand-2-conference-and-events-01.jpg" waves />
+                            <MDBCard>
+                                <MDBCardImage className="img-fluid" src="https://www.pipelineworkspaces.com/wp-content/uploads/2019/06/meetingconferencecoralgables.jpg" waves />
                                 <MDBCardBody>
-                                    <MDBCardTitle>Room 2 (Medium)</MDBCardTitle>
+                                    <MDBCardTitle>Room 3 (Large)</MDBCardTitle>
                                     <MDBCardText>
-                                        text here
+                                    Our attractive, fully equipped conference rooms and business meeting rooms provide an ideal working environment.
+                                     They include state-of-the-art equipment and capabilities plus free WIFI and free local and long distance calls.
+                                      And all our meeting facilities come with a thoroughly trained, professional support staff.
                                     </MDBCardText>
                                     <MDBBtn href="/create"><strong>Reserve This Space</strong></MDBBtn>
                                 </MDBCardBody>
