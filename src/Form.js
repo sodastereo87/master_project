@@ -17,7 +17,7 @@ class App extends Component {
             <a className="navbar-brand" href="https://reactjs.org/" target="_blank">
               <img src={logo} width="30" height="30" alt="reactjs.org" />
             </a>
-            <Link to="/Main" className="navbar-brand">MERN-Stack Reservation System</Link>
+            <Link to="/Main" className="navbar-brand">MERN Reservation System</Link>
             <div className="collpase nav-collapse">
               <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
