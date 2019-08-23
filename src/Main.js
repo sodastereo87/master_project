@@ -20,7 +20,7 @@ class Main extends Component {
                         <br />
 
                         <MDBCol>
-                            <MDBCard style={{ width: "22rem", color: "black" }}>
+                            <MDBCard style={{ width: "22rem", color: "black", display: "inline"}}>
                                 <MDBCardImage className="img-fluid" src="http://www.cambridgehotel.ca/wp-content/uploads/2017/01/meeting-room-4.jpg" waves />
                                 <MDBCardBody>
                                     <MDBCardTitle>Room 1 (Small)</MDBCardTitle>
@@ -35,7 +35,7 @@ class Main extends Component {
                         <br />
 
                         <MDBCol>
-                            <MDBCard style={{ width: "22rem", color: "black" }}>
+                            <MDBCard style={{ width: "22rem", color: "black", display: "inline"}}>
                                 <MDBCardImage className="img-fluid" src="https://www.goubiq.com/wp-content/uploads/2016/08/Conference-Room_s.jpg" waves />
                                 <MDBCardBody>
                                     <MDBCardTitle>Room 2 (Medium)</MDBCardTitle>
@@ -50,7 +50,7 @@ class Main extends Component {
                         <br />
 
                         <MDBCol>
-                            <MDBCard style={{ width: "22rem", color: "black" }}>
+                            <MDBCard style={{ width: "22rem", color: "black", display: "inline"}}>
                                 <MDBCardImage className="img-fluid" src="http://www.hotel-grandmajestic.cz/files/hotel/conferences/hotel-majestic-prague-conference-room-grand-2-conference-and-events-01.jpg" waves />
                                 <MDBCardBody>
                                     <MDBCardTitle>Room 2 (Medium)</MDBCardTitle>
