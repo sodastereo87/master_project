@@ -132,7 +132,8 @@ export default class CreateTodo extends Component {
                     </div>
                 </form>
                 <div> <h2>Select The Date</h2></div>
-                <Calendar />
+                <Calendar style={{display:"inline"}}/>
+                
                 <br />
             </div>
            

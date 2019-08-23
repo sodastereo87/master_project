@@ -65,10 +65,6 @@ background: linear-gradient(to right, #B1A6CE 0%, #1C6EA4 100%, #C59237 100%);
   font-size: 20px;
 }
 
-.react-calendar {
- margin-left: 30%;
-  color: black;
- }
 
  
 .card {
@@ -180,3 +176,13 @@ background: linear-gradient(to right, #B1A6CE 0%, #1C6EA4 100%, #C59237 100%);
           margin-bottom: 1rem;
           color: white;
       }
+
+      /* calendar */
+
+      .react-calendar {
+        display: inline;
+        background-color: white;
+        color: white;
+       }
+
+      
