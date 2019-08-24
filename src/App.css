@@ -179,10 +179,14 @@ background: linear-gradient(to right, #B1A6CE 0%, #1C6EA4 100%, #C59237 100%);
 
       /* calendar */
 
-      .react-calendar {
+      .react-calendar,
+      .react-calendar__tile,
+      .react-calendar__navigation__label,
+      .react-calendar__navigation__arrow  {
         display: inline;
         background-color: white;
         color: white;
        }
+
 
       

@@ -42,7 +42,7 @@ export default class CreateTodo extends Component {
     onSubmit(e) {
         e.preventDefault();
         
-            alert("Your Reservation Has Been Created")
+            alert("Reservation Confirmed")
         
 
         console.log(`Form submitted:`);
@@ -132,7 +132,7 @@ export default class CreateTodo extends Component {
                     </div>
                 </form>
                 <div> <h2>Select The Date</h2></div>
-                <Calendar style={{display:"inline"}}/>
+                <Calendar />
                 
                 <br />
             </div>
