@@ -104,8 +104,8 @@ export default class EditTodo extends Component {
                                 type="radio"
                                 name="priorityOptions"
                                 id="priorityLow"
-                                value="Low"
-                                checked={this.state.todo_priority === 'Low'}
+                                value="Room 1"
+                                checked={this.state.todo_priority === 'Room 1'}
                                 onChange={this.onChangeTodoPriority}
                             />
                             <label className="form-check-label">Room 1</label>
@@ -115,8 +115,8 @@ export default class EditTodo extends Component {
                                 type="radio"
                                 name="priorityOptions"
                                 id="priorityMedium"
-                                value="Medium"
-                                checked={this.state.todo_priority === 'Medium'}
+                                value="Room 2"
+                                checked={this.state.todo_priority === 'Room 2'}
                                 onChange={this.onChangeTodoPriority}
                             />
                             <label className="form-check-label">Room 2</label>
@@ -126,8 +126,8 @@ export default class EditTodo extends Component {
                                 type="radio"
                                 name="priorityOptions"
                                 id="priorityHigh"
-                                value="High"
-                                checked={this.state.todo_priority === 'High'}
+                                value="Room 3"
+                                checked={this.state.todo_priority === 'Room 3'}
                                 onChange={this.onChangeTodoPriority}
                             />
                             <label className="form-check-label">Room 3</label>
