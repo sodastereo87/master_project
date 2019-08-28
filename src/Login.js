@@ -59,12 +59,12 @@ class Login extends Component {
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address </label>
-            <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+            <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required="true"/>
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password </label>
-            <input value={this.state.password} onChange={this.handleChange} type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+            <input value={this.state.password} onChange={this.handleChange} type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required/>
           </div>
           <button type="submit" onClick={this.login} class="btn btn-primary" style={divStyle}>Login</button>
           <button onClick={this.signup} style={{ marginLeft: '25px' }} className="btn btn-success" style={divStyle}>Sign up</button>
