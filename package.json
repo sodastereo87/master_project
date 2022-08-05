@@ -12,7 +12,7 @@
     "firebase": "^6.3.4",
     "mdbreact": "^4.19.1",
     "mongo": "^0.1.0",
-    "mongoose": "^5.6.8",
+    "mongoose": "^5.7.5",
     "react": "^16.8.6",
     "react-calendar": "^2.19.1",
     "react-dom": "^16.8.6",
